@@ -1,0 +1,94 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('Fonts/Roboto/Roboto-Light.ttf') format(ttf);
+        font-style: normal;
+        font-weight: 300;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f5f5f5;
+    }
+    
+    .main {
+        padding-top: 30px;
+        height: 100vh;
+    }
+    
+    .container {
+        max-width: 70%;
+        margin: auto;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .container {
+            max-width: 90%;
+        }
+    }
+    
+    .header-title {
+        text-align: center;
+        margin-bottom: 40px;
+        color: rgb(10, 10, 160);
+        font-size: 40px;
+    }
+    
+    .card-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .card-item {
+        background: #fff;
+        padding: 20px;
+        border-radius: 7px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        min-height: 310px;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .card-main {
+            display: block;
+        }
+        .card-item {
+            margin-bottom: 20px;
+        }
+    }
+    
+    p {
+        color: #808080;
+        margin-top: 22px;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    
+    .btn {
+        margin-top: 22px;
+    }
+    
+    .btn button {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid rgb(22, 8, 177);
+        background: transparent;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 1px;
+    }
+    
+    .icon {
+        margin-bottom: 20px;
+    }
+    
+    .icon i {
+        font-size: 30px;
+        color: rgb(10, 10, 160);
+    }
